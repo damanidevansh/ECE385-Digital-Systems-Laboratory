@@ -1,0 +1,14 @@
+module freq (
+	input [11:0] Din,
+	input [10:0] freq_desired,
+	output [23:0] Dout);
+	
+logic[23:0] f;
+logic[23:0] = {Din[11:0], 12'b0};
+
+always_ff @(posedge SCLK)
+begin
+if(LRCLK)
+	Dout <= Din*380.43;
+end
+endmodule

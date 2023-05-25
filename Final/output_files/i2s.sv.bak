@@ -1,0 +1,28 @@
+module I2S
+(
+	input SCLK, LRCLK,
+	input [31:0]Din,
+	output Dout
+);
+
+logic [31:0] rightreg;
+logic [31:0] leftreg;
+
+always_ff @ (posedge SCLK)
+	if (LRCLK)
+	begin
+		leftreg <= Din;
+		Dout <= rightreg[31];
+		ARDUINO_IO[2] <= Dout;
+		rightreg[31:1] <= rightreg[30:0];
+		rightreg[0] <= 1'bx;
+	end
+	else
+		begin
+		ARDUINO_IO[2] <= Dout;
+		Dout <= leftreg[31];
+		leftreg[31:1] <= leftreg[30:0];
+		leftreg[0] <= 1'bx;
+		rightreg <= Din;
+	end
+endmodule

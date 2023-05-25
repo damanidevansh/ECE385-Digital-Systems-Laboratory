@@ -1,0 +1,12 @@
+module sine_rom (
+input clk,
+input [11:0] addr,
+output logic [7:0] q
+)
+
+logic [7:0] rom [4096];
+always_ff @(posedge clk) begin
+	q <= rom[addr];
+end
+initial begin $readmemh("sine.txt", rom); end
+endmodule

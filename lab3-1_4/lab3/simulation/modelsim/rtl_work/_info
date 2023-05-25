@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/zacha/Desktop/lab3/simulation/modelsim
+vADDER4
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1663291342
+!i10b 1
+!s100 dLQEKU[Rf<=Y<VIa?nF1;0
+IcXB6fD]8IVRgI`Y0U86hC1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 addermethods_sv_unit
+S1
+R0
+Z5 w1663291258
+Z6 8C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/addermethods.sv
+Z7 FC:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/addermethods.sv
+L0 7
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1663291342.000000
+Z10 !s107 C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/addermethods.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20|C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/addermethods.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20
+Z14 tCvgOpt 0
+n@a@d@d@e@r4
+vfull_adder
+R1
+R2
+!i10b 1
+!s100 9V?Bf66gaPX>iT56nd:RV1
+IAn7E2S06;QX^QVkgz5fif2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vreg_17
+R1
+R2
+!i10b 1
+!s100 TzXnY51aIaIZFVKcdA[Wn1
+I?_OlKZKklU`GVHKihFGG?2
+R3
+!s105 reg_17_sv_unit
+S1
+R0
+w1663190682
+8C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/reg_17.sv
+FC:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/reg_17.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/reg_17.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20|C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/reg_17.sv|
+!i113 1
+R12
+R13
+R14
+vrouter
+R1
+R2
+!i10b 1
+!s100 0oS5^3aI5<4lR1GZZPnaj2
+IzJ2e^jjY6;=:;2j9_H;7[3
+R3
+!s105 router_sv_unit
+S1
+R0
+w1663190681
+8C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/router.sv
+FC:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/router.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/router.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20|C:/Users/zacha/Downloads/385_lab4_adders_provided_fa20/router.sv|
+!i113 1
+R12
+R13
+R14

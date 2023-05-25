@@ -1,0 +1,35 @@
+04:53:37 **** Incremental Build of configuration Nios II for project finalfinal ****
+make all 
+Info: Building ../finalfinal_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalfinal_bsp/
+[BSP build complete]
+Info: Compiling sgtl5000_test.c to obj/default/sgtl5000_test.o
+nios2-elf-gcc -xc -MP -MMD -c -I../finalfinal_bsp//HAL/inc -I../finalfinal_bsp/ -I../finalfinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/sgtl5000_test.o sgtl5000_test.c
+Info: Compiling usb_kb/MAX3421E.c to obj/default/usb_kb/MAX3421E.o
+nios2-elf-gcc -xc -MP -MMD -c -I../finalfinal_bsp//HAL/inc -I../finalfinal_bsp/ -I../finalfinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/usb_kb/MAX3421E.o usb_kb/MAX3421E.c
+usb_kb/MAX3421E.c: In function 'MAXreg_rd':
+usb_kb/MAX3421E.c:80:7: warning: unused variable 'nrdata' [-Wunused-variable]
+  BYTE nrdata;
+       ^
+usb_kb/MAX3421E.c: In function 'MaxGpxHandler':
+usb_kb/MAX3421E.c:232:7: warning: variable 'GPINIRQ' set but not used [-Wunused-but-set-variable]
+  BYTE GPINIRQ;
+       ^
+usb_kb/MAX3421E.c: In function 'SPI_wr':
+usb_kb/MAX3421E.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking finalfinal.elf
+nios2-elf-g++  -T'../finalfinal_bsp//linker.x' -msys-crt0='../finalfinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../finalfinal_bsp/   -Wl,-Map=finalfinal.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o finalfinal.elf obj/default/sgtl5000/sgtl5000.o obj/default/sgtl5000_test.o obj/default/usb_kb/MAX3421E.o -lm -msys-lib=m
+obj/default/usb_kb/MAX3421E.o: In function `MAX_busprobe':
+C:\Users\zacha\Desktop\lab6\software\finalfinal/usb_kb/MAX3421E.c:138: undefined reference to `usb_task_state'
+C:\Users\zacha\Desktop\lab6\software\finalfinal/usb_kb/MAX3421E.c:146: undefined reference to `usb_task_state'
+C:\Users\zacha\Desktop\lab6\software\finalfinal/usb_kb/MAX3421E.c:150: undefined reference to `usb_task_state'
+C:\Users\zacha\Desktop\lab6\software\finalfinal/usb_kb/MAX3421E.c:158: undefined reference to `usb_task_state'
+C:\Users\zacha\Desktop\lab6\software\finalfinal/usb_kb/MAX3421E.c:162: undefined reference to `usb_task_state'
+obj/default/usb_kb/MAX3421E.o:C:\Users\zacha\Desktop\lab6\software\finalfinal/usb_kb/MAX3421E.c:165: more undefined references to `usb_task_state' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [finalfinal.elf] Error 1
+
+04:53:38 Build Finished (took 1s.164ms)
+
